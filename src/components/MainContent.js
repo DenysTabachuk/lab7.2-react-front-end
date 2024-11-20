@@ -7,7 +7,7 @@ export default function MainContent(){
         <h2 id = "title">Найкраща піца</h2>
         <div id = "product-container"> 
         {products.map(product => (
-                  <GoodsCard prodcutObject={product}></GoodsCard>
+                  <GoodsCard prodcutObject={product} key = {product.id}></GoodsCard>
               ))}
       </div>
       </>
